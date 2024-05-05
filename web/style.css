@@ -1,0 +1,159 @@
+@font-face {
+  font-family: 'GothamBold';
+  src: url('fonts/gothambold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'GothamBook';
+  src: url('fonts/gothambook.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'GothamBlack';
+  src: url('fonts/gothamblack.ttf') format('truetype');
+}
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&display=swap');
+
+
+body {background-color: #FFFFFF;
+    background-image: url('prueba.png');
+    font-family: "Overpass Mono", monospace;
+    font-family: "EB Garamond", serif;
+    font-family: "GothamBook";
+    font-family: "GothamBold";
+    font-family: "GothamBlack";
+
+}
+
+/* Font para los titulos */
+h1, h2, h3 { font-family: "GothamBlack", sans-serif;}
+
+/* Font para los parrafos */
+.p {font-family: "EB Garamond", serif;}
+
+/* .i {
+  
+  } */
+
+  .nav {
+    background-color: rgba(255, 255, 255, 0);
+    color: white; 
+    padding: 10px; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 1000; 
+    }
+
+    .nav-boton {position: fixed; 
+        top: 20px; 
+        right: 20px; 
+        z-index: 999; 
+        background-color: #F3F3F3; 
+        color: #1D1D1D; 
+        border: none; 
+        padding: 10px 20px;
+        border-radius: 28px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1); /* offsetX offsetY blurRadius color */
+}
+
+.nav-botoon {position: fixed; 
+  top: 20px; 
+  right: 20px; 
+  z-index: 999; 
+  background-color: #F3F3F3; 
+  color: #1D1D1D; 
+  border: none; 
+  padding: 10px 20px;
+  border-radius: 28px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1); /* offsetX offsetY blurRadius color */
+}
+
+
+.nav-menu  {
+    
+        max-width: 40px; 
+        width: 100%; 
+        height: auto; 
+        margin: 20px 0 0 20px;
+        position: fixed; 
+        top: 0; 
+        left: 0;
+        z-index: 9999; 
+}
+
+.nav-lupa  {
+    max-width: 40px; /* Ancho máximo deseado */
+    width: auto; /* Ancho automático */
+    height: auto; /* Para mantener la proporción de aspecto */
+    position: fixed; /* Para mantener la imagen en una posición fija */
+    top: 24px; /* Ajusta la posición superior */
+    right: calc(100px + 30px + 10px); /* Ajusta la posición derecha (20px de margen derecho del botón + 40px de ancho del botón + 10px de espacio adicional) */
+    z-index: 9999; /* Asegura que la imagen esté sobre otros elementos */
+}
+  .logo {
+    max-width:60%; /* Para ocupar el ancho del contenedor */
+    height: auto; /* Para mantener la proporción de aspecto */
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.recompensa  {max-width: 100%; 
+height: auto; 
+display: block; 
+margin-left: auto;
+margin-right: auto;  }
+
+.boton-principal {
+  top: 100%; 
+  right: 100%; 
+  transform: translate(124%, -125%);
+  background-color: #262626; 
+  color: #ffffff; 
+  border: none; 
+  padding: 14px 80px;
+  border-radius: 28px;
+  display: flex;
+  font-size: 18px; 
+    font-weight: bold; 
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.carousel {
+  width: 50%; 
+  margin: 0 auto;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.slide {
+  display: inline-block; 
+  width: 30%; 
+ 
+  filter: brightness(0.8); 
+}
+
+.slide:last-child {
+  margin-right: 0; /* Quitar el margen derecho del último slide */
+}
+
+.slide img {
+  width: 70%; 
+  height: auto;
+}
+
+.caption {
+  background-color: rgba(0, 0, 0, 0);
+  color: #1D1D1D;
+  padding: 10px;
+  position: absolute;
+  font-weight: bold; 
+  text-align: center;
+}
+
+.slide.active {
+  filter: brightness(1); 
+}
