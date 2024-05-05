@@ -41,6 +41,19 @@ h1, h2, h3 { font-family: "Overpass Mono", monospace;}
         border-radius: 28px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1); /* offsetX offsetY blurRadius color */
 }
+.boton-principal {
+  top: 100%; 
+  right: 100%; 
+  transform: translate(124%, -125%);
+  background-color: #262626; 
+  color: #ffffff; 
+  border: none; 
+  padding: 14px 80px;
+  border-radius: 28px;
+  font-size: 18px; 
+    font-weight: bold; 
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1); 
+}
 .nav-menu  {
     
         max-width: 40px; 
